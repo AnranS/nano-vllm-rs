@@ -1,0 +1,13 @@
+test_bad_throughput_and_missing_repetition_fail (__main__.self_test.<locals>.ValidationTests.test_bad_throughput_and_missing_repetition_fail) ... ok
+test_checksum_instability_fails_without_cross_backend_check (__main__.self_test.<locals>.ValidationTests.test_checksum_instability_fails_without_cross_backend_check) ... ok
+test_malformed_counts_and_ids_fail (__main__.self_test.<locals>.ValidationTests.test_malformed_counts_and_ids_fail) ... ok
+test_memory_trend_is_descriptive (__main__.self_test.<locals>.ValidationTests.test_memory_trend_is_descriptive) ... ok
+test_native_stable_and_actual_quantiles (__main__.self_test.<locals>.ValidationTests.test_native_stable_and_actual_quantiles) ... ok
+test_nonfinite_and_missing_itl_fail (__main__.self_test.<locals>.ValidationTests.test_nonfinite_and_missing_itl_fail) ... ok
+test_python_reported_itl (__main__.self_test.<locals>.ValidationTests.test_python_reported_itl) ... ok
+test_workload_requires_fixed_length (__main__.self_test.<locals>.ValidationTests.test_workload_requires_fixed_length) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

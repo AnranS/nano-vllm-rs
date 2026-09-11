@@ -70,7 +70,7 @@ def main():
         )
     if 'flash' in args.engines and not (args.binary.is_file() and os.access(args.binary, os.X_OK)):
         parser.error(f'current Rust executable is missing or not executable: {args.binary}; '
-                     'run cargo build --release --locked, or pass --binary')
+                     'run cargo build --release --locked --features flash-attn, or pass --binary')
     if 'python' in args.engines:
         if not (args.python.is_file() and os.access(args.python, os.X_OK)):
             parser.error(f'Python executable does not exist or is not executable: {args.python}')

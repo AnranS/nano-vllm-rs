@@ -1,0 +1,26 @@
+{
+  "raw_results": [
+    {
+      "backend": "flash",
+      "path": "benchmarks/stress-results/flash-10/flash.json.gz",
+      "gzip_sha256": "b939815801ba616c7c243aa05b43bf4d36131d65cf1be5408566b4ac2238e62d",
+      "raw_sha256": "031df063e6c9b7d199e5d4585346b983b9031d14157a2f6014b84efb21249505"
+    },
+    {
+      "backend": "native",
+      "path": "benchmarks/stress-results/reference-3/native.json.gz",
+      "gzip_sha256": "48be28cce98e430b118f2178a072e17228ff3dbe51875c63606ccc34b0d853ad",
+      "raw_sha256": "1c89ffce5737910a861de050d41f52bda36e3d3606dbd070feb7806d53dd3ec9"
+    },
+    {
+      "backend": "python",
+      "path": "benchmarks/stress-results/reference-3/python.json.gz",
+      "gzip_sha256": "daf15e2c2fa86427e73b695a541181876fd5bbcc27192ca576deaf25279c7e36",
+      "raw_sha256": "ad4865293c5cede4ad6cfb5be44f66ec79c3e5678827951d8f41436551d9597a"
+    }
+  ],
+  "binary_sha256": "7fd36add4c2957370a6ee865b64cc7ee0f304994f920de9f397ab04a91caf336",
+  "workload_sha256": "45d3e3c5d60ee8feea663b13ca15c3a6f038a4997ce83caf4913abcdb8ab663e",
+  "source_commit": "1539bbc68ce390765ea55dedfd6bc78876e5c3de",
+  "all_operational_stress_checks_pass": true
+}

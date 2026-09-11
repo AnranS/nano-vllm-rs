@@ -40,5 +40,4 @@ python3 benchmarks/compare_attention.py \
 `--python` 保留虚拟环境入口，不会解析符号链接后绕过虚拟环境。
 若基线尚未构建，脚本会在启动任何引擎前给出完整构建命令。
 
-本次整理仅复制和校验源码；发布前的完整构建与复现实测由主流程验证，
-不能仅凭本目录存在就视为已在新机器上完成验证。
+2026-09-11已在本机完成上述独立release构建（--locked --offline），并运行原有4组prompt、共64个greedy token，输出与第一轮参考一致。构建和对照记录位于 `benchmarks/stress-results/checks/`；其他机器仍需自行验证环境兼容性。

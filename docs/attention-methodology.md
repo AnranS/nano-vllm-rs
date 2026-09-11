@@ -25,7 +25,7 @@ Python 对照仍为本地 nano-vLLM，参考 commit `3988556e7965b4f2a7d31e0ea7c
 
 ## Benchmark 公平口径
 
-比较三组可执行路径：`.optimization/round1/nano-vllm-rs` 第一轮快照、当前 release 二进制的 `--attention-backend flash`、Python nano-vLLM。比较脚本为 `benchmarks/compare_attention.py`。当前二进制的默认 native 另做回归；不能把“第一轮快照”误标成最早未优化的 Rust 基线。
+比较三组可执行路径：`benchmarks/baselines/round1` 可重建的第一轮源码快照、当前 release 二进制的 `--attention-backend flash`、Python nano-vLLM。比较脚本为 `benchmarks/compare_attention.py`。当前二进制的默认 native 另做回归；不能把“第一轮快照”误标成最早未优化的 Rust 基线。
 
 - 使用同一台 RTX 5070 Ti、WSL2 Ubuntu 24.04 和同一份本地 Qwen3-0.6B BF16 权重。Rust CUDA 工具链及 Python/PyTorch/FlashAttention 版本应随最终结果保存，不能假定今后安装版本不变。
 - 三组读取相同已保存的 token JSON、请求顺序、每请求输出长度、temperature=0.6、ignore_eos=true。性能测试不重新分词。Rust 和 Python RNG 实现不同，因此随机生成 token 不要求逐个相同；固定输出长度和 KV 配额不能改变。
@@ -66,7 +66,7 @@ TTFT 从整批请求提交开始计，包含排队；如报告 p50/p95，先在�
 
 ## 可复现命令
 
-以下命令在 WSL 项目目录执行。需保留已记录 SHA-256 的 `.optimization/round1/nano-vllm-rs` 第一轮快照；`compare_attention.py` 不会自动重建历史版本。复测应换新的输出目录，避免覆盖原始结果。各 GPU 阶段顺序执行，测试期间不要同时运行 benchmark 或 profiler。
+以下命令在 WSL 项目目录执行。需保留已记录 SHA-256 的 `benchmarks/baselines/round1` 可重建的第一轮源码快照；`compare_attention.py` 不会自动重建历史版本。复测应换新的输出目录，避免覆盖原始结果。各 GPU 阶段顺序执行，测试期间不要同时运行 benchmark 或 profiler。
 
 ```bash
 cd /root/nano-vllm-rs
@@ -79,6 +79,11 @@ cargo build --release --locked --offline --features flash-attn
 cargo test --locked --offline --features flash-attn
 cargo test --locked --offline --features flash-attn --lib gpu::tests -- --ignored --test-threads=1
 cargo clippy --locked --offline --features flash-attn --all-targets -- -D warnings
+
+# 独立重建第一轮源码基线。
+cargo build --release --locked --offline \
+  --manifest-path benchmarks/baselines/round1/Cargo.toml \
+  --target-dir benchmarks/baselines/round1/target
 
 # 串行重新测量第一轮快照、Flash、Python，3 次正式测量。
 "$P" benchmarks/compare_attention.py \

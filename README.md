@@ -6,6 +6,28 @@
 
 目前验证的模型是 `/root/huggingface/Qwen3-0.6B`。支持 dense Qwen3、单张 NVIDIA GPU、BF16 计算；其他模型大小受显存容量限制，尚未逐一验证。第二轮 FlashAttention 实测与数值限制见 [ATTENTION.md](ATTENTION.md)，原始记录在 `benchmarks/attention-results/`；[OPTIMIZATION.md](OPTIMIZATION.md) 和 [BENCHMARK.md](BENCHMARK.md) 保留前两版结果。
 
+## 连续压测与对比
+
+最新的同进程重复压测、逐轮吞吐与延迟、输出一致性及显存采样见 [STRESS_TEST.md](STRESS_TEST.md)。本轮压测脚本是 `benchmarks/stress_suite.py`，使用保存的固定 token 工作负载，原始 JSON 无损压缩为 gzip 后提交。
+
+```bash
+source scripts/env.sh
+cargo build --release --locked --offline --features flash-attn
+python3 benchmarks/stress_suite.py \
+  --model /path/to/Qwen3-0.6B \
+  --backends flash --repetitions 10 \
+  --output-dir benchmarks/stress-rerun-flash
+python3 benchmarks/stress_suite.py \
+  --model /path/to/Qwen3-0.6B \
+  --backends native --include-python --repetitions 3 \
+  --python /path/to/nano-vllm/.venv/bin/python --reference /path/to/nano-vllm \
+  --output-dir benchmarks/stress-rerun-reference
+```
+
+每个后端在一个模型进程内完成所有重复轮次。脚本核对请求 ID、输出长度、总 token 数、计时值以及同后端跨轮输出 SHA256；不要求 Rust 和 Python 的随机输出相同。GPU 显存为整卡轮询值，不能据此证明分配器没有泄漏。当前验证是 CLI 推理负载，项目尚无 HTTP 服务接口。
+
+第一轮对照所需源码已包含在 [benchmarks/baselines/round1](benchmarks/baselines/round1/README.md)，可以独立构建；复现实测不再依赖本机隐藏的历史二进制。原有 [ATTENTION.md](ATTENTION.md)、[OPTIMIZATION.md](OPTIMIZATION.md)、[BENCHMARK.md](BENCHMARK.md) 保留各轮历史口径。
+
 ## 可选 FlashAttention 后端
 
 默认 `native` 保留原有 CUDA attention。可以离线编译并显式启用 FlashAttention 2 原生内核：

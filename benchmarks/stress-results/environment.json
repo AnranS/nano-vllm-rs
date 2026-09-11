@@ -1,0 +1,16 @@
+{
+  "torch": "2.12.1",
+  "transformers": "5.15.1",
+  "flash-attn": "2.8.3.post1+cu.13.0.torch.2.12",
+  "model": "Qwen3-0.6B",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "cuda_toolkit": "13.2",
+  "driver": "610.88",
+  "rust": "1.98.1",
+  "test_date": "2026-09-11",
+  "source_commit": "1539bbc68ce390765ea55dedfd6bc78876e5c3de",
+  "pressure_results": [
+    "flash-10/summary.json",
+    "reference-3/summary.json"
+  ]
+}
