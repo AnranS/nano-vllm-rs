@@ -1,0 +1,97 @@
+{
+  "checks": "Exact per-request output counts and IDs, total input/output tokens, latency ordering and process exits; independent correctness acceptance checked by report generator.",
+  "files": [
+    {
+      "file": "before-latency-b1.json",
+      "runs": 3,
+      "requests": 1
+    },
+    {
+      "file": "after-latency-b1.json",
+      "runs": 3,
+      "requests": 1
+    },
+    {
+      "file": "python-latency-b1.json",
+      "runs": 3,
+      "requests": 1
+    },
+    {
+      "file": "before-throughput-b8.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "after-throughput-b8.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "python-throughput-b8.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "before-mixed-b32.json",
+      "runs": 3,
+      "requests": 32
+    },
+    {
+      "file": "after-mixed-b32.json",
+      "runs": 3,
+      "requests": 32
+    },
+    {
+      "file": "python-mixed-b32.json",
+      "runs": 3,
+      "requests": 32
+    },
+    {
+      "file": "before-nano-vllm-256.json",
+      "runs": 1,
+      "requests": 256
+    },
+    {
+      "file": "after-nano-vllm-256.json",
+      "runs": 1,
+      "requests": 256
+    },
+    {
+      "file": "python-nano-vllm-256.json",
+      "runs": 1,
+      "requests": 256
+    },
+    {
+      "file": "before-prefix-b8-cold.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "after-prefix-b8-cold.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "python-prefix-b8-cold.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "before-prefix-b8-warm.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "after-prefix-b8-warm.json",
+      "runs": 3,
+      "requests": 8
+    },
+    {
+      "file": "python-prefix-b8-warm.json",
+      "runs": 3,
+      "requests": 8
+    }
+  ],
+  "before_binary_sha256": "cd270598093f1c5754fa1bdf91d615e59326e357ca673a5c71ee42508458389c",
+  "after_binary_sha256": "16ccfe84d1925c50cf7f5e7c570c488d745e99f18ffd871c2cfce9dcede58e0a"
+}

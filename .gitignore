@@ -1,0 +1,12 @@
+/target/
+/.tools/
+/.cache/
+/.bench-logs/
+/.optimization/
+/models/
+*.safetensors
+*.gguf
+__pycache__/
+*.py[cod]
+**/target/
+/benchmarks/optimization-candidates/

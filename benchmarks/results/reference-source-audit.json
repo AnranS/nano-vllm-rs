@@ -1,0 +1,120 @@
+{
+  "reference_commit": "3988556e7965b4f2a7d31e0ea7c09b03a4acc306",
+  "method": "Compare Python AST after removing leading docstrings; comments and source locations excluded.",
+  "files": [
+    {
+      "path": "nanovllm/__init__.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "42996c92a5c18d1e333eb57c7d670b2eac53b132df81d53cc6286a89125c9d77",
+      "worktree_sha256": "42996c92a5c18d1e333eb57c7d670b2eac53b132df81d53cc6286a89125c9d77"
+    },
+    {
+      "path": "nanovllm/config.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "bca5fddf17092e26d14075348965e46a3b707f5ad780b04b31f48e91bd38e98c",
+      "worktree_sha256": "8c36b992cf4321e0a40b11b04b5259e0e11eacc33c207b9b703403914f3a714e"
+    },
+    {
+      "path": "nanovllm/engine/block_manager.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "d0240374f589eaa85c4c7923b8970f2635ab7bc73adc5044fa2d273955b54242",
+      "worktree_sha256": "f07d235260d02df6b4674c0e0eee945252d99c0357d0690910a8a3421e4a7513"
+    },
+    {
+      "path": "nanovllm/engine/llm_engine.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "e3c81177f5dd688966a50f792ac5a66c94005ac938eb8662ce028abd9ac0c1c9",
+      "worktree_sha256": "e3c81177f5dd688966a50f792ac5a66c94005ac938eb8662ce028abd9ac0c1c9"
+    },
+    {
+      "path": "nanovllm/engine/model_runner.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "2373c9daad7de3956905c9a0ec9d6b2e0a8d355a209162de8570507c5f419fd7",
+      "worktree_sha256": "2373c9daad7de3956905c9a0ec9d6b2e0a8d355a209162de8570507c5f419fd7"
+    },
+    {
+      "path": "nanovllm/engine/scheduler.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "9f7a0097767553b3b5a1f21495b54a67c787440421ec2eaac565ba7bc092993d",
+      "worktree_sha256": "9f7a0097767553b3b5a1f21495b54a67c787440421ec2eaac565ba7bc092993d"
+    },
+    {
+      "path": "nanovllm/engine/sequence.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "d5bb5c522d22554b5c36de745150ec8b601827ee0388058404dcceef1ae8290d",
+      "worktree_sha256": "201bcf9e4f16e8e679be684d64d27392fb4efc69311e65295c457279d9f862d7"
+    },
+    {
+      "path": "nanovllm/layers/activation.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "9dca7e6fae963ecb9d9d582b539d1c18e47825e103dac8c04058d6def8924c64",
+      "worktree_sha256": "9dca7e6fae963ecb9d9d582b539d1c18e47825e103dac8c04058d6def8924c64"
+    },
+    {
+      "path": "nanovllm/layers/attention.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "00c2f52cd428bc2f82ff90ef8cbc96b0959a225daaeb035e9e0eaf63a85bfbba",
+      "worktree_sha256": "936b7476f7b6f42552397f262d41dfe36d8f22785cf6f4ceb91a3b572ad791f6"
+    },
+    {
+      "path": "nanovllm/layers/embed_head.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "e823fbd0a1eb9d64a90e93ade7d32f32235f0039bafc97d367d92a8ee06b3d0f",
+      "worktree_sha256": "e823fbd0a1eb9d64a90e93ade7d32f32235f0039bafc97d367d92a8ee06b3d0f"
+    },
+    {
+      "path": "nanovllm/layers/layernorm.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "a661fc4eeef736f29308c736da7d91cbc9d896d662c990a3f887dc6f6c8d7169",
+      "worktree_sha256": "a661fc4eeef736f29308c736da7d91cbc9d896d662c990a3f887dc6f6c8d7169"
+    },
+    {
+      "path": "nanovllm/layers/linear.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "9fe0d9917e15603d4af435591ba8b4c5f45b253ee1a825607061ca73d50470cf",
+      "worktree_sha256": "9fe0d9917e15603d4af435591ba8b4c5f45b253ee1a825607061ca73d50470cf"
+    },
+    {
+      "path": "nanovllm/layers/rotary_embedding.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "82b59b6a5d32e3465c4c9207e690a7e9b5c38219357f1920fa05ff81f7ae3836",
+      "worktree_sha256": "82b59b6a5d32e3465c4c9207e690a7e9b5c38219357f1920fa05ff81f7ae3836"
+    },
+    {
+      "path": "nanovllm/layers/sampler.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "63a342a4ec02e846d5872d2906dc25ef5af1b7d66b85a63a6a88668f23543050",
+      "worktree_sha256": "63a342a4ec02e846d5872d2906dc25ef5af1b7d66b85a63a6a88668f23543050"
+    },
+    {
+      "path": "nanovllm/llm.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "ffe74fe7f64ba5169471a17596757b8d8f309e75f4db7040ac41b84db2e38179",
+      "worktree_sha256": "ffe74fe7f64ba5169471a17596757b8d8f309e75f4db7040ac41b84db2e38179"
+    },
+    {
+      "path": "nanovllm/models/qwen3.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "6156b3477117094f657a6f609df3c051393a23cce1405af6b88dafddb49acd29",
+      "worktree_sha256": "6156b3477117094f657a6f609df3c051393a23cce1405af6b88dafddb49acd29"
+    },
+    {
+      "path": "nanovllm/sampling_params.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "1e5146d1a06f5230ab049df1ea24814a1d73ba52c3ad22af04bd0f1c6293e0c0",
+      "worktree_sha256": "1e5146d1a06f5230ab049df1ea24814a1d73ba52c3ad22af04bd0f1c6293e0c0"
+    },
+    {
+      "path": "nanovllm/utils/context.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "83a608397c38cf22216dabba9e73b41cf985cf64c7a7f35c5c14e223fcd09959",
+      "worktree_sha256": "c449ce993c1998ccc6bd3defa521b474b133d4f061861fdd60f0bbf383277b5e"
+    },
+    {
+      "path": "nanovllm/utils/loader.py",
+      "executable_ast_matches_head": true,
+      "head_sha256": "29d4b6c38a8356ad31f8858b1a14e893d7703cd3d5e32f86b0dc9ab3fb866e99",
+      "worktree_sha256": "29d4b6c38a8356ad31f8858b1a14e893d7703cd3d5e32f86b0dc9ab3fb866e99"
+    }
+  ]
+}

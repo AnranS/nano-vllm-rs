@@ -1,0 +1,4 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.643s
+Measured run 1/1
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.116126977,"decode_steps":35,"decode_tokens":140,"elapsed_seconds":0.386072732,"input_tokens":10307,"mean_inter_token_latency_ms":4.74860206428571,"mean_latency_ms":212.09858479999997,"mean_ttft_ms":178.85837035000003,"output_tokens":160,"output_tokens_per_second":414.42968316135835,"peak_kv_blocks":24,"preemptions":0,"prefill_seconds":0.26953044400000004,"prefill_steps":13,"prefill_tokens":10307,"total_requests":20}
+Benchmark saved to benchmarks/attention-validation/flash/graph.json

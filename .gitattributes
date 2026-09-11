@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.npz -text
+*.gz -text
+
+# Preserve measured artifacts and historical baseline byte-for-byte.
+benchmarks/*-results/** -text
+benchmarks/results/** -text
+benchmarks/attention-validation/** -text
+benchmarks/baselines/** -text

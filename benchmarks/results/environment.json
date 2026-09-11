@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-10T01:13:38.353698+00:00",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti, 16303 MiB, 610.88",
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Fri_May_08_10:53:34_AM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.86\nBuild cuda_13.2.r13.2/compiler.37953736_0",
+  "reference_commit": "3988556e7965b4f2a7d31e0ea7c09b03a4acc306",
+  "reference_worktree_status": "M example.py\n M nanovllm/config.py\n M nanovllm/engine/block_manager.py\n M nanovllm/engine/sequence.py\n M nanovllm/layers/attention.py\n M nanovllm/utils/context.py",
+  "rust_source_lines_including_tests": 3987,
+  "cuda_source_lines": 304
+}

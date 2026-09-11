@@ -1,0 +1,13 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/deps/nano_vllm_rs-f24a750056d16532)
+
+running 6 tests
+test gpu::tests::gpu_cached_rope_matches_direct_at_context_boundary ... ok
+test gpu::tests::gpu_causal_paged_attention_and_rope ... ok
+test gpu::tests::gpu_gemm_rms_sampling_graph ... ok
+test gpu::tests::gpu_parallel_sampler_matches_serial_for_tail_ties_and_temperature ... ok
+test gpu::tests::gpu_ragged_gqa_matches_cpu ... ok
+test gpu::tests::gpu_views_keep_allocations_and_reject_overlap ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 25 filtered out; finished in 0.37s
+

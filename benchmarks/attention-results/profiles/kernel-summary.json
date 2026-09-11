@@ -1,0 +1,17 @@
+{
+  "round1": {
+    "attention_ms": 136.58588,
+    "all_kernels_ms": 426.517772,
+    "gemm_ms": 256.772336
+  },
+  "flash": {
+    "attention_ms": 48.743716,
+    "all_kernels_ms": 345.959261,
+    "gemm_ms": 263.20511
+  },
+  "python": {
+    "attention_ms": 54.184088,
+    "all_kernels_ms": 386.04294,
+    "gemm_ms": 288.97095
+  }
+}

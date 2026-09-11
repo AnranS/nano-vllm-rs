@@ -1,0 +1,4 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.675s
+Measured run 1/1
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.045067696,"decode_steps":7,"decode_tokens":14,"elapsed_seconds":0.179935048,"input_tokens":1046,"mean_inter_token_latency_ms":7.648793071428573,"mean_latency_ms":179.93405,"mean_ttft_ms":126.3924985,"output_tokens":16,"output_tokens_per_second":88.92097552890309,"peak_kv_blocks":6,"preemptions":0,"prefill_seconds":0.134802289,"prefill_steps":2,"prefill_tokens":1046,"total_requests":2}
+Benchmark saved to benchmarks/attention-validation/native/prefix-cold.json

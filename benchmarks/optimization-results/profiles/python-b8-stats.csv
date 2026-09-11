@@ -1,0 +1,48 @@
+Generating SQLite file .optimization/profiles/python-b8.sqlite from .optimization/profiles/python-b8.nsys-rep
+Processing [.optimization/profiles/python-b8.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+54.5,210244849,10796,19474.3,12131.0,11107,608139,45616.0,void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(T1::Params)
+17.7,68179706,3556,19173.1,17092.0,16291,401659,23161.0,void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(T1::Params)
+11.9,45927130,3556,12915.4,11299.0,10210,493264,18583.2,"void flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<(int)128, (int)64, (int)128, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)64, (int)128, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)1, (bool)0>(flash::Flash_fwd_params)"
+3.4,12968588,128,101317.1,89973.0,84116,283329,45870.7,triton_red_fused__softmax__to_copy_argmax_clamp_min_div_exponential_ge_mul_neg_scalar_tensor_sub_unsqueeze_where_4
+2.0,7639696,7296,1047.1,896.0,672,432962,6270.1,triton_per_fused__to_copy_add_mean_mul_pow_rsqrt_0
+2.0,7623980,3556,2144.0,1921.0,1888,261467,7463.3,"void flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<(int)128, (int)64, (int)128, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)64, (int)128, (int)4, cutlass::bfloat16_t>>, (int)4, (int)1, (bool)1>(flash::Flash_fwd_params)"
+1.7,6614743,7168,922.8,896.0,672,5314,307.6,triton_red_fused__to_copy_add_mean_mul_pow_rsqrt_0
+1.0,3916632,28,139879.7,140063.5,138047,140896,658.0,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_32x6_tn_align8>(T1::Params)
+1.0,3890247,3584,1085.4,832.0,800,350352,7283.8,triton_poi_fused__to_copy_add_cat_index_mul_split_sub_0
+0.8,3123909,28,111568.2,102632.0,102135,352688,47255.6,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_256x128_32x3_tn_align8>(T1::Params)
+0.8,2966083,3584,827.6,800.0,768,5025,363.9,triton_poi_fused__to_copy_add_cat_index_mul_split_sub_1
+0.7,2856744,3584,797.1,705.0,672,188170,3141.3,store_kvcache_kernel
+0.7,2758283,3584,769.6,641.0,608,258875,4334.1,triton_poi_fused_mul_silu_split_0
+0.5,2093789,28,74778.2,74753.0,74321,75281,235.2,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(T1::Params)
+0.4,1412065,28,50430.9,50443.0,50220,50540,81.0,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x128_32x4_tn_align8>(T1::Params)
+0.3,1120996,128,8757.8,7202.0,3937,207856,17743.4,triton_red_fused__to_copy_amax_ge_mul_neg_scalar_tensor_unsqueeze_where_0
+0.2,953435,128,7448.7,7554.0,5601,7970,442.9,triton_red_fused__softmax__to_copy_ge_mul_neg_scalar_tensor_sub_unsqueeze_where_2
+0.2,632978,28,22606.4,22629.0,22341,22854,114.0,"void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)64, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)64, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)1, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)"
+0.1,559138,127,4402.7,4417.0,3873,4769,164.3,"void at::native::<unnamed>::indexSelectSmallIndex<c10::BFloat16, long, unsigned int, (int)2, (int)2, (int)-2>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<const T1, T3>, at::cuda::detail::TensorInfo<const T2, T3>, int, int, T3, long)"
+0.0,141923,128,1108.8,1089.0,1056,1344,37.8,"void at::native::<unnamed>::distribution_elementwise_grid_stride_kernel<unsigned long, (int)2, void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(curandStatePhilox4_32_10 *) (instance 1)], void at::native::<unnamed>::distribution_nullary_kernel<long, unsigned long, ulonglong2, at::CUDAGeneratorImpl *, void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(curandStatePhilox4_32_10 *) (instance 1)], void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(unsigned long) (instance 1)]>(at::TensorIteratorBase &, T4, const T5 &, T6)::[lambda(int, unsigned long) (instance 1)]>(long, at::PhiloxCudaState, T3, T4)"
+0.0,126336,254,497.4,496.5,416,769,57.3,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, std::array<char *, (unsigned long)1>>(int, T2, T3)"
+0.0,97948,128,765.2,768.0,705,992,40.5,triton_per_fused__to_copy_amax_ge_mul_neg_scalar_tensor_unsqueeze_where_1
+0.0,96861,127,762.7,768.0,705,993,35.5,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(int) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,90064,128,703.6,704.0,672,800,21.2,triton_per_fused__softmax__to_copy_ge_mul_neg_scalar_tensor_sub_unsqueeze_where_3
+0.0,4896,2,2448.0,2448.0,832,4064,2285.4,"void at::native::vectorized_gather_kernel<(int)16, long>(char *, char *, T2 *, int, long, long, long, long, bool)"
+0.0,1025,1,1025.0,1025.0,1025,1025,0.0,"void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctorOnSelf_add<int>, std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, T1, T2, T4, T5, T6, T7)"
+0.0,896,1,896.0,896.0,896,896,0.0,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)"
+
+Processing [.optimization/profiles/python-b8.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+89.2,336799780,1404,239885.9,6660.0,4558,2972652,734695.1,cudaMemcpyAsync
+5.6,21008855,127,165424.1,142319.0,118359,442852,61451.7,cudaGraphLaunch_v10000
+2.3,8692849,1077,8071.4,6836.0,3392,147290,6175.1,cuLaunchKernel
+1.5,5844896,541,10803.9,8642.0,4901,126073,8958.3,cudaLaunchKernel
+0.3,1160402,768,1510.9,836.0,631,40772,2171.1,cudaEventRecordWithFlags_v11010
+0.3,998290,128,7799.1,6679.5,3144,36761,4654.6,cudaStreamSynchronize
+0.3,995535,1257,792.0,530.0,229,22666,1047.1,cudaEventQuery
+0.2,607063,1664,364.8,237.0,162,21266,599.0,cudaStreamIsCapturing_v10000
+0.1,486153,240,2025.6,1074.5,309,220507,14186.8,cuKernelGetFunction
+0.1,440809,2,220404.5,220404.5,12355,428454,294226.4,cudaDeviceSynchronize
+0.1,231960,541,428.8,290.0,103,4424,399.1,cuKernelGetName
+0.1,214115,28,7647.0,7408.0,6675,9811,791.8,cuLaunchKernelEx
+0.1,190525,257,741.3,720.0,147,5118,734.8,cudaStreamGetCaptureInfo_v12030
+0.0,9797,1,9797.0,9797.0,9797,9797,0.0,cuProfilerStart
+

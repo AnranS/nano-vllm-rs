@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 3615.63it/s]
+HF legacy-0-first: 5 tokens
+HF legacy-1-first: 23 tokens
+HF legacy-2-first: 17 tokens
+HF legacy-3-first: 351 tokens
+HF legacy-0-sixth: 10 tokens
+HF legacy-1-sixth: 28 tokens
+HF legacy-2-sixth: 22 tokens
+HF legacy-3-sixth: 356 tokens
+HF boundary-255: 255 tokens
+HF boundary-256: 256 tokens
+HF boundary-257: 257 tokens
+HF boundary-511: 511 tokens
+HF boundary-512: 512 tokens
+HF boundary-513: 513 tokens
+HF boundary-1023: 1023 tokens
+HF boundary-1024: 1024 tokens
+HF boundary-1025: 1025 tokens
+HF boundary-3073: 3073 tokens
+HF shared-prefix-english: 517 tokens
+HF shared-prefix-chinese: 529 tokens

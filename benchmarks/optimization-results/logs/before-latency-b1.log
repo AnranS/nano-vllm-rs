@@ -1,0 +1,9 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.649s
+Warm-up 1/1
+Measured run 1/3
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.49683392099999996,"decode_steps":127,"decode_tokens":127,"elapsed_seconds":0.504498874,"input_tokens":128,"mean_inter_token_latency_ms":3.9130983700787403,"mean_latency_ms":504.498462,"mean_ttft_ms":7.534969,"output_tokens":128,"output_tokens_per_second":253.71711731511218,"peak_kv_blocks":1,"preemptions":0,"prefill_seconds":0.007528428,"prefill_steps":1,"prefill_tokens":128,"total_requests":1}
+Measured run 2/3
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.4751770310000001,"decode_steps":127,"decode_tokens":127,"elapsed_seconds":0.48291388,"input_tokens":128,"mean_inter_token_latency_ms":3.742583535433071,"mean_latency_ms":482.913477,"mean_ttft_ms":7.605368,"output_tokens":128,"output_tokens_per_second":265.05761234280527,"peak_kv_blocks":1,"preemptions":0,"prefill_seconds":0.007600284,"prefill_steps":1,"prefill_tokens":128,"total_requests":1}
+Measured run 3/3
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.47354522800000004,"decode_steps":127,"decode_tokens":127,"elapsed_seconds":0.481403153,"input_tokens":128,"mean_inter_token_latency_ms":3.729811330708661,"mean_latency_ms":481.402656,"mean_ttft_ms":7.716617,"output_tokens":128,"output_tokens_per_second":265.8894093284013,"peak_kv_blocks":1,"preemptions":0,"prefill_seconds":0.007711516,"prefill_steps":1,"prefill_tokens":128,"total_requests":1}
+Benchmark saved to /root/nano-vllm-rs/benchmarks/optimization-results/before-latency-b1.json

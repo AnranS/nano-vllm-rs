@@ -1,0 +1,5 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.661s
+Warm-up 1/1
+Measured run 1/1
+{"cache_hits":60,"cached_tokens":15360,"decode_seconds":31.210366126999954,"decode_steps":5019,"decode_tokens":133614,"elapsed_seconds":34.54733182,"input_tokens":142827,"mean_inter_token_latency_ms":7.447210412459907,"mean_latency_ms":17738.871726593745,"mean_ttft_ms":13849.158819367187,"output_tokens":133966,"output_tokens_per_second":3877.7524324597757,"peak_kv_blocks":128,"preemptions":97,"prefill_seconds":3.277082094999998,"prefill_steps":274,"prefill_tokens":187478,"total_requests":256}
+Benchmark saved to /root/nano-vllm-rs/benchmarks/attention-results/flash-nano-vllm-256.json

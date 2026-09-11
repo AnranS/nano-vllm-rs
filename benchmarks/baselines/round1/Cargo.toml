@@ -1,0 +1,27 @@
+[package]
+name = "nano-vllm-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98"
+description = "A single-GPU Qwen3 inference engine with paged KV cache and continuous batching"
+publish = false
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+half = "2"
+safetensors = "0.6"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokenizers = { version = "0.22", default-features = false, features = ["onig"] }
+
+[features]
+default = ["cuda"]
+cuda = []
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

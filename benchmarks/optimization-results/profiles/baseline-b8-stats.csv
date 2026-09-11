@@ -1,0 +1,29 @@
+Generating SQLite file .optimization/profiles/baseline-b8.sqlite from .optimization/profiles/baseline-b8.nsys-rep
+Processing [.optimization/profiles/baseline-b8.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+50.0,367924386,3584,102657.5,87793.5,58348,1393172,97742.2,"attention_kernel(const __nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *, const int *, const int *, const int *, __nv_bfloat16 *, int, int, int, int, int, int, int, int)"
+29.4,216274595,10796,20032.8,12163.0,11043,696235,49596.7,void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(T1::Params)
+9.2,67663953,3556,19028.1,17156.0,16259,475646,22754.0,void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(T1::Params)
+4.8,35162422,128,274706.4,261972.0,178788,649312,88594.6,"sample_kernel(const __nv_bfloat16 *, const float *, const unsigned long *, int *, int)"
+2.7,19941357,7168,2782.0,2625.0,2465,383500,5459.0,"void rms_kernel<(bool)1>(const __nv_bfloat16 *, __nv_bfloat16 *, const __nv_bfloat16 *, __nv_bfloat16 *, int, float)"
+1.5,10686877,3584,2981.8,2049.0,1952,410194,12195.9,"qkv_rope_kernel(const __nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *, const int *, const int *, __nv_bfloat16 *, __nv_bfloat16 *, __nv_bfloat16 *, int, int, int, int, int, float, float)"
+0.7,5081830,3584,1417.9,960.0,928,355206,8935.8,"silu_kernel(const __nv_bfloat16 *, __nv_bfloat16 *, int, int)"
+0.6,4087083,28,145967.3,138347.0,136635,355174,41009.0,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_32x6_tn_align8>(T1::Params)
+0.5,3856028,28,137715.3,102276.0,101492,545773,109193.5,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_256x128_32x3_tn_align8>(T1::Params)
+0.3,2067482,28,73838.6,73806.5,73327,74542,293.6,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(T1::Params)
+0.3,1841262,28,65759.4,50090.0,49865,273046,57528.7,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x128_32x4_tn_align8>(T1::Params)
+0.0,303447,128,2370.7,2336.0,2240,6241,351.0,"void rms_kernel<(bool)0>(const __nv_bfloat16 *, __nv_bfloat16 *, const __nv_bfloat16 *, __nv_bfloat16 *, int, float)"
+0.0,162943,128,1273.0,1184.0,1120,11298,896.4,"embedding_kernel(const int *, const __nv_bfloat16 *, __nv_bfloat16 *, int, int, int)"
+0.0,131900,128,1030.5,1024.0,992,1280,46.8,"gather_kernel(const __nv_bfloat16 *, const int *, __nv_bfloat16 *, int, int, int)"
+
+Processing [.optimization/profiles/baseline-b8.sqlite] with [/opt/nvidia/nsight-systems/2025.6.3/host-linux-x64/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+95.1,755610781,1152,655912.1,4636.0,3474,43637704,2157580.0,cudaMemcpyAsync
+3.4,26668868,1281,20818.8,10366.0,300,380295,40074.9,cudaStreamSynchronize
+1.3,10129768,127,79762.0,76610.0,51374,199333,23782.9,cudaGraphLaunch_v10000
+0.1,816246,144,5668.4,5696.5,2493,22344,2138.1,cudaLaunchKernel
+0.1,638210,113,5647.9,4873.0,2530,52120,5283.6,cuLaunchKernel
+0.0,385609,113,3412.5,122.0,86,365813,34396.5,cuKernelGetFunction
+0.0,15863,144,110.2,102.0,59,519,64.0,cuKernelGetName
+0.0,5094,1,5094.0,5094.0,5094,5094,0.0,cuProfilerStart
+

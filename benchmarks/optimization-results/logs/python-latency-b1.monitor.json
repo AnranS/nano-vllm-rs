@@ -1,0 +1,177 @@
+{
+  "command": [
+    "/root/nano-vllm/.venv/bin/python",
+    "benchmarks/python_reference.py",
+    "--model",
+    "/root/huggingface/Qwen3-0.6B",
+    "--workload",
+    "benchmarks/workloads/latency-b1.json",
+    "--output",
+    "/root/nano-vllm-rs/benchmarks/optimization-results/python-latency-b1.json",
+    "--warmups",
+    "1",
+    "--repetitions",
+    "3",
+    "--block-size",
+    "256",
+    "--num-blocks",
+    "128",
+    "--max-sequences",
+    "32",
+    "--max-model-len",
+    "4096",
+    "--max-batch-tokens",
+    "1024"
+  ],
+  "returncode": 0,
+  "process_wall_seconds": 8.104471921920776,
+  "device_memory_note": "device-wide polling includes other applications and startup; not a CUDA allocator high-water mark",
+  "gpu_before": {
+    "timestamp": 1789007683.4429407,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "memory_used_mib": 2092.0,
+    "temperature_c": 47.0,
+    "power_w": 164.5,
+    "sm_clock_mhz": 2827.0,
+    "utilization_percent": 97.0
+  },
+  "gpu_peak_used_mib": 7253.0,
+  "gpu_peak_delta_mib": 5161.0,
+  "samples": [
+    {
+      "timestamp": 1789007683.4429407,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2092.0,
+      "temperature_c": 47.0,
+      "power_w": 164.5,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 97.0
+    },
+    {
+      "timestamp": 1789007683.9920878,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2092.0,
+      "temperature_c": 42.0,
+      "power_w": 97.14,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007684.5959811,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2092.0,
+      "temperature_c": 41.0,
+      "power_w": 59.38,
+      "sm_clock_mhz": 2850.0,
+      "utilization_percent": 1.0
+    },
+    {
+      "timestamp": 1789007685.248269,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2092.0,
+      "temperature_c": 41.0,
+      "power_w": 57.78,
+      "sm_clock_mhz": 2850.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007685.7796214,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2679.0,
+      "temperature_c": 40.0,
+      "power_w": 47.94,
+      "sm_clock_mhz": 637.0,
+      "utilization_percent": 1.0
+    },
+    {
+      "timestamp": 1789007686.3203087,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 3573.0,
+      "temperature_c": 41.0,
+      "power_w": 47.02,
+      "sm_clock_mhz": 2662.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007686.854417,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 3635.0,
+      "temperature_c": 41.0,
+      "power_w": 53.03,
+      "sm_clock_mhz": 2565.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007687.3878827,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7199.0,
+      "temperature_c": 41.0,
+      "power_w": 54.44,
+      "sm_clock_mhz": 2572.0,
+      "utilization_percent": 14.0
+    },
+    {
+      "timestamp": 1789007687.9294136,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7247.0,
+      "temperature_c": 41.0,
+      "power_w": 54.68,
+      "sm_clock_mhz": 2572.0,
+      "utilization_percent": 2.0
+    },
+    {
+      "timestamp": 1789007688.4715044,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7251.0,
+      "temperature_c": 41.0,
+      "power_w": 53.03,
+      "sm_clock_mhz": 2647.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007689.000366,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7253.0,
+      "temperature_c": 41.0,
+      "power_w": 52.99,
+      "sm_clock_mhz": 2595.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789007689.5267656,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7253.0,
+      "temperature_c": 41.0,
+      "power_w": 79.63,
+      "sm_clock_mhz": 2572.0,
+      "utilization_percent": 89.0
+    },
+    {
+      "timestamp": 1789007690.0610037,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7253.0,
+      "temperature_c": 45.0,
+      "power_w": 126.97,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 89.0
+    },
+    {
+      "timestamp": 1789007690.588546,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7253.0,
+      "temperature_c": 47.0,
+      "power_w": 158.81,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 87.0
+    },
+    {
+      "timestamp": 1789007691.1808398,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7253.0,
+      "temperature_c": 47.0,
+      "power_w": 114.49,
+      "sm_clock_mhz": 2835.0,
+      "utilization_percent": 0.0
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.686s
+Logits saved to /root/nano-vllm-rs/benchmarks/attention-results/native/rust-logits-2.json

@@ -1,0 +1,7 @@
+Python warm-up 1/1
+Python measured run 1/3
+{"elapsed_seconds": 0.3583847849999984, "input_tokens": 128, "output_tokens": 128, "output_tokens_per_second": 357.1580194175949, "prefill_tokens": 128, "decode_steps": 127, "ttft_p50_ms": 22.102161000020715, "ttft_p95_ms": 22.102161000020715, "inter_token_p50_ms": 2.6384410000446223, "inter_token_p95_ms": 2.718227800096429}
+Python measured run 2/3
+{"elapsed_seconds": 0.3609120950000033, "input_tokens": 128, "output_tokens": 128, "output_tokens_per_second": 354.65699757166306, "prefill_tokens": 128, "decode_steps": 127, "ttft_p50_ms": 21.64647600011449, "ttft_p95_ms": 21.64647600011449, "inter_token_p50_ms": 2.645212000061292, "inter_token_p95_ms": 2.795327300009376}
+Python measured run 3/3
+{"elapsed_seconds": 0.3614772299999913, "input_tokens": 128, "output_tokens": 128, "output_tokens_per_second": 354.10252535132867, "prefill_tokens": 128, "decode_steps": 127, "ttft_p50_ms": 22.889927000051102, "ttft_p95_ms": 22.889927000051102, "inter_token_p50_ms": 2.644933000055971, "inter_token_p95_ms": 2.7875189000042155}

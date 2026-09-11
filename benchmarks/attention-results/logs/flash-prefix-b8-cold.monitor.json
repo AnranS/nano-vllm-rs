@@ -1,0 +1,80 @@
+{
+  "command": [
+    "/root/nano-vllm-rs/target/release/nano-vllm-rs",
+    "bench",
+    "--attention-backend",
+    "flash",
+    "--model",
+    "/root/huggingface/Qwen3-0.6B",
+    "--workload",
+    "benchmarks/workloads/prefix-b8.json",
+    "--output",
+    "/root/nano-vllm-rs/benchmarks/attention-results/flash-prefix-b8-cold.json",
+    "--warmups",
+    "1",
+    "--repetitions",
+    "3",
+    "--block-size",
+    "256",
+    "--num-blocks",
+    "128",
+    "--max-sequences",
+    "32",
+    "--max-model-len",
+    "4096",
+    "--max-batch-tokens",
+    "1024"
+  ],
+  "returncode": 0,
+  "process_wall_seconds": 2.0986056327819824,
+  "device_memory_note": "device-wide polling includes other applications and startup; not a CUDA allocator high-water mark",
+  "gpu_before": {
+    "timestamp": 1789085912.666512,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "memory_used_mib": 2962.0,
+    "temperature_c": 56.0,
+    "power_w": 177.89,
+    "sm_clock_mhz": 2820.0,
+    "utilization_percent": 97.0
+  },
+  "gpu_peak_used_mib": 8093.0,
+  "gpu_peak_delta_mib": 5131.0,
+  "samples": [
+    {
+      "timestamp": 1789085912.666512,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2962.0,
+      "temperature_c": 56.0,
+      "power_w": 177.89,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 97.0
+    },
+    {
+      "timestamp": 1789085913.2177713,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 5931.0,
+      "temperature_c": 46.0,
+      "power_w": 112.95,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 22.0
+    },
+    {
+      "timestamp": 1789085913.7548985,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 8093.0,
+      "temperature_c": 51.0,
+      "power_w": 94.93,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 93.0
+    },
+    {
+      "timestamp": 1789085914.289007,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 8093.0,
+      "temperature_c": 51.0,
+      "power_w": 161.46,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 96.0
+    }
+  ]
+}

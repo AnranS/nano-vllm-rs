@@ -1,0 +1,12 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.963s
+Warm-up 1/1
+Measured run 1/1
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.36042228800000004,"decode_steps":127,"decode_tokens":1016,"elapsed_seconds":0.376214723,"input_tokens":1024,"mean_inter_token_latency_ms":2.841640614173226,"mean_latency_ms":376.213714,"mean_ttft_ms":15.325356,"output_tokens":1024,"output_tokens_per_second":2721.8498835836367,"peak_kv_blocks":8,"preemptions":0,"prefill_seconds":0.015300622,"prefill_steps":1,"prefill_tokens":1024,"total_requests":8}
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-889d.qdstrm'
+[1/1] [0%                          ] flash-b8.nsys-repProcessing events...
+[1/1] [0%                          ] flash-b8.nsys-rep[1/1] [0%                          ] flash-b8.nsys-rep[1/1] [===22%                      ] flash-b8.nsys-rep[1/1] [=========43%                ] flash-b8.nsys-rep[1/1] [===========50%              ] flash-b8.nsys-rep[1/1] [========================100%] flash-b8.nsys-rep[1/1] [========================100%] flash-b8.nsys-rep
+Benchmark saved to benchmarks/attention-results/profiles/flash-b8.json
+Generated:
+	/root/nano-vllm-rs/.optimization/attention-profiles/flash-b8.nsys-rep

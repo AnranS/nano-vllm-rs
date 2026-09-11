@@ -1,0 +1,111 @@
+{
+  "engine": "nano-vllm-rs",
+  "model_load_seconds": 0.640930444,
+  "model_memory": {
+    "kv_cache_bytes": 3758096384,
+    "weights_bytes": 1192099840,
+    "workspace_bytes": 45283032
+  },
+  "precision": "bfloat16",
+  "prefix_cache_between_runs": "warm",
+  "profile_cuda": false,
+  "runs": [
+    {
+      "outputs": [
+        {
+          "cached_tokens": 512,
+          "finish_reason": "length",
+          "id": 18,
+          "inter_token_latencies_ms": [
+            5.081362,
+            5.097102000000001,
+            5.080739999999999,
+            5.041069999999998,
+            5.0781709999999975,
+            5.074831000000003,
+            5.087941999999998
+          ],
+          "latency_ms": 42.442401,
+          "prompt_tokens": 517,
+          "token_ids": [
+            12095,
+            13,
+            576,
+            6722,
+            315,
+            9625,
+            374,
+            12095
+          ],
+          "ttft_ms": 6.901183
+        },
+        {
+          "cached_tokens": 512,
+          "finish_reason": "length",
+          "id": 19,
+          "inter_token_latencies_ms": [
+            5.081362,
+            5.097102000000001,
+            5.080739999999999,
+            5.041069999999998,
+            5.0781709999999975,
+            5.074831000000003,
+            5.087941999999998
+          ],
+          "latency_ms": 42.442401,
+          "prompt_tokens": 529,
+          "token_ids": [
+            104130,
+            105196,
+            105678,
+            9370,
+            65770,
+            36993,
+            99490,
+            3837
+          ],
+          "ttft_ms": 6.901183
+        }
+      ],
+      "stats": {
+        "cache_hits": 4,
+        "cached_tokens": 1024,
+        "decode_seconds": 0.035524543,
+        "decode_steps": 7,
+        "decode_tokens": 14,
+        "elapsed_seconds": 0.042443124,
+        "input_tokens": 1046,
+        "mean_inter_token_latency_ms": 5.077316857142857,
+        "mean_latency_ms": 42.442401,
+        "mean_ttft_ms": 6.901183,
+        "output_tokens": 16,
+        "output_tokens_per_second": 376.9750784602943,
+        "peak_kv_blocks": 4,
+        "preemptions": 0,
+        "prefill_seconds": 0.006888999,
+        "prefill_steps": 1,
+        "prefill_tokens": 22,
+        "total_requests": 2
+      }
+    }
+  ],
+  "seed": 0,
+  "settings": {
+    "attention_backend": "native",
+    "block_size": 256,
+    "device": 0,
+    "eager": false,
+    "max_batch_tokens": 1024,
+    "max_model_len": 4096,
+    "max_sequences": 4,
+    "model": "/root/huggingface/Qwen3-0.6B",
+    "no_prefix_cache": false,
+    "num_blocks": 128
+  },
+  "timestamp_unix": 1789085686,
+  "version": "0.1.0",
+  "warmup_workload": null,
+  "warmups": 1,
+  "workload": "attention-prefix",
+  "workload_path": "/root/nano-vllm-rs/benchmarks/attention-validation/prefix-workload.json"
+}

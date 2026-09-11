@@ -1,0 +1,3 @@
+Python warm-up 1/1
+Python measured run 1/1
+{"elapsed_seconds": 40.97549939400005, "input_tokens": 142827, "output_tokens": 133966, "output_tokens_per_second": 3269.41713905301, "prefill_tokens": 211144, "decode_steps": 5023, "ttft_p50_ms": 17053.475699500043, "ttft_p95_ms": 33929.98450050004, "inter_token_p50_ms": 7.157934999895588, "inter_token_p95_ms": 8.207043200092828}

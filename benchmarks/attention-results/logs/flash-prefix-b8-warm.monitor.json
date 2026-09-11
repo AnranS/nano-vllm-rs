@@ -1,0 +1,81 @@
+{
+  "command": [
+    "/root/nano-vllm-rs/target/release/nano-vllm-rs",
+    "bench",
+    "--attention-backend",
+    "flash",
+    "--model",
+    "/root/huggingface/Qwen3-0.6B",
+    "--workload",
+    "benchmarks/workloads/prefix-b8.json",
+    "--output",
+    "/root/nano-vllm-rs/benchmarks/attention-results/flash-prefix-b8-warm.json",
+    "--warmups",
+    "1",
+    "--repetitions",
+    "3",
+    "--block-size",
+    "256",
+    "--num-blocks",
+    "128",
+    "--max-sequences",
+    "32",
+    "--max-model-len",
+    "4096",
+    "--max-batch-tokens",
+    "1024",
+    "--warm-prefix-cache"
+  ],
+  "returncode": 0,
+  "process_wall_seconds": 1.7306933403015137,
+  "device_memory_note": "device-wide polling includes other applications and startup; not a CUDA allocator high-water mark",
+  "gpu_before": {
+    "timestamp": 1789085925.5992348,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "memory_used_mib": 2974.0,
+    "temperature_c": 49.0,
+    "power_w": 147.66,
+    "sm_clock_mhz": 2827.0,
+    "utilization_percent": 98.0
+  },
+  "gpu_peak_used_mib": 8044.0,
+  "gpu_peak_delta_mib": 5070.0,
+  "samples": [
+    {
+      "timestamp": 1789085925.5992348,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2974.0,
+      "temperature_c": 49.0,
+      "power_w": 147.66,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 98.0
+    },
+    {
+      "timestamp": 1789085926.131172,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 6272.0,
+      "temperature_c": 44.0,
+      "power_w": 105.82,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 22.0
+    },
+    {
+      "timestamp": 1789085926.660763,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 8044.0,
+      "temperature_c": 49.0,
+      "power_w": 105.38,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 96.0
+    },
+    {
+      "timestamp": 1789085927.190684,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 8044.0,
+      "temperature_c": 50.0,
+      "power_w": 154.9,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 96.0
+    }
+  ]
+}

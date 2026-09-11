@@ -1,0 +1,4 @@
+Loaded /root/huggingface/Qwen3-0.6B in 0.663s
+Measured run 1/1
+{"cache_hits":0,"cached_tokens":0,"decode_seconds":0.07046153499999999,"decode_steps":15,"decode_tokens":60,"elapsed_seconds":0.156355224,"input_tokens":396,"mean_inter_token_latency_ms":4.699903066666669,"mean_latency_ms":156.353923,"mean_ttft_ms":85.85537699999999,"output_tokens":64,"output_tokens_per_second":409.3243472312764,"peak_kv_blocks":5,"preemptions":0,"prefill_seconds":0.085835421,"prefill_steps":1,"prefill_tokens":396,"total_requests":4}
+Benchmark saved to /root/nano-vllm-rs/benchmarks/attention-results/native/rust-correctness-eager.json

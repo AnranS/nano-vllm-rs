@@ -1,0 +1,9 @@
+{
+  "engine": "transformers-eager",
+  "dtype": "bfloat16",
+  "model": "/root/huggingface/Qwen3-0.6B",
+  "torch_version": "2.12.1+cu130",
+  "transformers_version": "5.15.1",
+  "cases_sha256": "cddf74d9d3eff38b81b4be23f6fda602efaf42f95d191d032ce3efab0d8a2483",
+  "model_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

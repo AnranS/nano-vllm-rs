@@ -1,0 +1,150 @@
+{
+  "command": [
+    "/root/nano-vllm-rs/.optimization/baseline/nano-vllm-rs",
+    "bench",
+    "--model",
+    "/root/huggingface/Qwen3-0.6B",
+    "--workload",
+    "benchmarks/workloads/prefix-b8.json",
+    "--output",
+    "/root/nano-vllm-rs/benchmarks/optimization-results/before-prefix-b8-cold.json",
+    "--warmups",
+    "1",
+    "--repetitions",
+    "3",
+    "--block-size",
+    "256",
+    "--num-blocks",
+    "128",
+    "--max-sequences",
+    "32",
+    "--max-model-len",
+    "4096",
+    "--max-batch-tokens",
+    "1024"
+  ],
+  "returncode": 0,
+  "process_wall_seconds": 5.879251718521118,
+  "device_memory_note": "device-wide polling includes other applications and startup; not a CUDA allocator high-water mark",
+  "gpu_before": {
+    "timestamp": 1789008085.487113,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "memory_used_mib": 2093.0,
+    "temperature_c": 49.0,
+    "power_w": 66.4,
+    "sm_clock_mhz": 2827.0,
+    "utilization_percent": 0.0
+  },
+  "gpu_peak_used_mib": 7154.0,
+  "gpu_peak_delta_mib": 5061.0,
+  "samples": [
+    {
+      "timestamp": 1789008085.487113,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2093.0,
+      "temperature_c": 49.0,
+      "power_w": 66.4,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "timestamp": 1789008086.02091,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 5366.0,
+      "temperature_c": 49.0,
+      "power_w": 63.28,
+      "sm_clock_mhz": 2835.0,
+      "utilization_percent": 23.0
+    },
+    {
+      "timestamp": 1789008086.5541294,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 60.0,
+      "power_w": 111.12,
+      "sm_clock_mhz": 2827.0,
+      "utilization_percent": 99.0
+    },
+    {
+      "timestamp": 1789008087.0843737,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 55.0,
+      "power_w": 159.21,
+      "sm_clock_mhz": 2797.0,
+      "utilization_percent": 96.0
+    },
+    {
+      "timestamp": 1789008087.6195204,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 53.0,
+      "power_w": 163.64,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 98.0
+    },
+    {
+      "timestamp": 1789008088.1506808,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 62.0,
+      "power_w": 181.6,
+      "sm_clock_mhz": 2805.0,
+      "utilization_percent": 98.0
+    },
+    {
+      "timestamp": 1789008088.683369,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 54.0,
+      "power_w": 169.82,
+      "sm_clock_mhz": 2812.0,
+      "utilization_percent": 97.0
+    },
+    {
+      "timestamp": 1789008089.2243946,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 61.0,
+      "power_w": 164.14,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 99.0
+    },
+    {
+      "timestamp": 1789008089.7697144,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 55.0,
+      "power_w": 181.88,
+      "sm_clock_mhz": 2797.0,
+      "utilization_percent": 97.0
+    },
+    {
+      "timestamp": 1789008090.2991645,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 53.0,
+      "power_w": 164.23,
+      "sm_clock_mhz": 2820.0,
+      "utilization_percent": 98.0
+    },
+    {
+      "timestamp": 1789008090.829503,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 7154.0,
+      "temperature_c": 62.0,
+      "power_w": 177.19,
+      "sm_clock_mhz": 2805.0,
+      "utilization_percent": 97.0
+    },
+    {
+      "timestamp": 1789008091.366489,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memory_used_mib": 2093.0,
+      "temperature_c": 54.0,
+      "power_w": 150.73,
+      "sm_clock_mhz": 2812.0,
+      "utilization_percent": 68.0
+    }
+  ]
+}

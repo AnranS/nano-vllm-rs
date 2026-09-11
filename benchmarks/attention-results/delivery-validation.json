@@ -1,0 +1,117 @@
+{
+  "checks": "Exact request IDs/output counts, total tokens, latency ordering, process exit status. Numerical correctness is separately recorded, not implied by performance.",
+  "files": [
+    {
+      "file": "round1-latency-b1.json",
+      "sha256": "5ddac57a2b6dc58ef71513569314b2e3be5832c3a1abb93f643552d80186e451",
+      "requests": 1,
+      "runs": 3
+    },
+    {
+      "file": "flash-latency-b1.json",
+      "sha256": "1ab06fdf8076720f64ca93fe91f130e06357354d915f2568be0d749179d2f0ab",
+      "requests": 1,
+      "runs": 3
+    },
+    {
+      "file": "python-latency-b1.json",
+      "sha256": "e8e7f434129a55f2cdfe0f6f3f19e03ce398cba9a3a646cf821df7ca3a87980b",
+      "requests": 1,
+      "runs": 3
+    },
+    {
+      "file": "round1-throughput-b8.json",
+      "sha256": "eab7f06f043e8b2afc628479c2ec4e908c9d16b8771058baf3a831c25c78a9aa",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "flash-throughput-b8.json",
+      "sha256": "a85906eb9d4905b91e7e29fa55d1306762d7bae7257d6def2e4bbcc67bcefc5a",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "python-throughput-b8.json",
+      "sha256": "2260e826730e60a1d6c695de16269fafd83deeda37537eddf3d747b87d0df430",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "round1-mixed-b32.json",
+      "sha256": "fb40767e42f8a7dc47ce0c67f0cf67e45d20cd86742c0a75f6204a9ed612f2ae",
+      "requests": 32,
+      "runs": 3
+    },
+    {
+      "file": "flash-mixed-b32.json",
+      "sha256": "b1da18f8f168bd1e0933fda87b0a0d42a9e36b03781b935c70f385b0b4486a63",
+      "requests": 32,
+      "runs": 3
+    },
+    {
+      "file": "python-mixed-b32.json",
+      "sha256": "d25135596ac6311afa5261fb38ff0eff18a5b26fac26a5806cf34f45d7245364",
+      "requests": 32,
+      "runs": 3
+    },
+    {
+      "file": "round1-nano-vllm-256.json",
+      "sha256": "fa763aea94a96a73b7e23d0ab68502d19644cf4e025ff19632f5edfe17aba464",
+      "requests": 256,
+      "runs": 1
+    },
+    {
+      "file": "flash-nano-vllm-256.json",
+      "sha256": "1f0f1f1a13163d2c19ed116151df71b36c4e15f4299f78c1e1f0847eac4f45f9",
+      "requests": 256,
+      "runs": 1
+    },
+    {
+      "file": "python-nano-vllm-256.json",
+      "sha256": "812646566bb09e6ae0111ef4caf3ac9aeb2c92579aaba8286f31d63698419b86",
+      "requests": 256,
+      "runs": 1
+    },
+    {
+      "file": "round1-prefix-b8-cold.json",
+      "sha256": "a8d22d57446e588cafe83c6b32eb2aaa6fa34081488a78da6339619cb05fe2c2",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "flash-prefix-b8-cold.json",
+      "sha256": "36b2929ec364b167dd2afa3aa97368d07632782a524d9b53ba117d427b351ecc",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "python-prefix-b8-cold.json",
+      "sha256": "621afc4fc1377bfff123b07841efd0327e0146c51ee284104fd39a9ec18be39f",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "round1-prefix-b8-warm.json",
+      "sha256": "0411601b97027a7bc6ee87fbd81b0ab0f337eb068ad1f2f0a2e01472fcd99b4d",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "flash-prefix-b8-warm.json",
+      "sha256": "3cff723bfb631978674fdbe0c021d6617d6d964f66b66fe67494d0a4b6af4e5b",
+      "requests": 8,
+      "runs": 3
+    },
+    {
+      "file": "python-prefix-b8-warm.json",
+      "sha256": "510e57bb0ded6d919ef538749e4b9b369c0fae90fdec65f121a6b7c74d32bc72",
+      "requests": 8,
+      "runs": 3
+    }
+  ],
+  "round1_binary_sha256": "16ccfe84d1925c50cf7f5e7c570c488d745e99f18ffd871c2cfce9dcede58e0a",
+  "flash_binary_sha256": "7fd36add4c2957370a6ee865b64cc7ee0f304994f920de9f397ab04a91caf336",
+  "correctness_summary": "flash/correctness-summary.json",
+  "validation_report": "../attention-validation/flash-final-validation.json"
+}

@@ -1,0 +1,89 @@
+{
+  "checked": "Per-request lengths and IDs, aggregate counts, timing arithmetic, process exit codes, reference source semantics.",
+  "results": [
+    {
+      "file": "rust-latency-b1.json",
+      "runs": 3,
+      "requests_per_run": 1,
+      "input_tokens_per_run": 128,
+      "output_tokens_per_run": 128
+    },
+    {
+      "file": "python-latency-b1.json",
+      "runs": 3,
+      "requests_per_run": 1,
+      "input_tokens_per_run": 128,
+      "output_tokens_per_run": 128
+    },
+    {
+      "file": "rust-throughput-b8.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 1024,
+      "output_tokens_per_run": 1024
+    },
+    {
+      "file": "python-throughput-b8.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 1024,
+      "output_tokens_per_run": 1024
+    },
+    {
+      "file": "rust-mixed-b32.json",
+      "runs": 3,
+      "requests_per_run": 32,
+      "input_tokens_per_run": 9583,
+      "output_tokens_per_run": 6318
+    },
+    {
+      "file": "python-mixed-b32.json",
+      "runs": 3,
+      "requests_per_run": 32,
+      "input_tokens_per_run": 9583,
+      "output_tokens_per_run": 6318
+    },
+    {
+      "file": "rust-nano-vllm-256.json",
+      "runs": 1,
+      "requests_per_run": 256,
+      "input_tokens_per_run": 142827,
+      "output_tokens_per_run": 133966
+    },
+    {
+      "file": "python-nano-vllm-256.json",
+      "runs": 1,
+      "requests_per_run": 256,
+      "input_tokens_per_run": 142827,
+      "output_tokens_per_run": 133966
+    },
+    {
+      "file": "rust-prefix-b8-cold.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 4744,
+      "output_tokens_per_run": 512
+    },
+    {
+      "file": "python-prefix-b8-cold.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 4744,
+      "output_tokens_per_run": 512
+    },
+    {
+      "file": "rust-prefix-b8-warm.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 4744,
+      "output_tokens_per_run": 512
+    },
+    {
+      "file": "python-prefix-b8-warm.json",
+      "runs": 3,
+      "requests_per_run": 8,
+      "input_tokens_per_run": 4744,
+      "output_tokens_per_run": 512
+    }
+  ]
+}

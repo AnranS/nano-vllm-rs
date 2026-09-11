@@ -1,0 +1,25 @@
+   Compiling nano-vllm-rs v0.1.0 (/root/nano-vllm-rs)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.35s
+     Running unittests src/lib.rs (target/debug/deps/nano_vllm_rs-88a6f806a97ac286)
+
+running 17 tests
+test engine::block_manager::tests::reservations_are_unique_and_recycled ... ok
+test engine::tests::active_requests_each_emit_one_token ... ok
+test engine::tests::backend_failure_aborts_and_releases_every_reservation ... ok
+test engine::tests::insufficient_free_capacity_queues_then_recycles ... ok
+test engine::tests::invalid_input_and_overflow_are_rejected ... ok
+test runtime::tests::a_waiting_prefill_does_not_evict_established_decode_work ... ok
+test runtime::tests::admission_accounts_for_live_shared_prefixes_at_capacity ... ok
+test runtime::tests::chunked_prefill_obeys_token_budget_and_does_not_sample_early ... ok
+test runtime::tests::capacity_pressure_preempts_and_recomputes_without_losing_output ... ok
+test runtime::tests::eos_stops_generation_and_ignore_eos_preserves_length ... ok
+test runtime::tests::invalid_requests_fail_before_running_and_empty_batch_is_valid ... ok
+test runtime::tests::lru_eviction_clears_stale_keys_and_never_evicts_referenced_blocks ... ok
+test runtime::tests::model_failure_releases_pins_invalidates_cache_and_poison_engine ... ok
+test runtime::tests::mixed_lengths_match_sequential_reference_and_release_all_blocks ... ok
+test runtime::tests::prefix_lookup_checks_entire_context_and_collision_tokens ... ok
+test runtime::tests::warm_prefix_is_shared_and_final_prompt_token_is_recomputed ... ok
+test runtime::tests::seed_is_independent_of_chunking_queueing_cache_and_preemption ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

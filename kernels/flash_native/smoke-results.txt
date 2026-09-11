@@ -1,0 +1,13 @@
+Validated on NVIDIA GeForce RTX 5070 Ti (SM120), CUDA Toolkit 13.2, WSL2.
+Command: .cache/flash-native-build/smoke
+Exit status: 0
+
+ragged_paged_causal_prefill splits=1 graph=0 max_abs_error=0.00046847388 mean_abs_error=3.3233799e-05
+paged_gqa_decode splits=1 graph=0 max_abs_error=0.00032281131 mean_abs_error=3.6797901e-05
+paged_gqa_decode splits=2 graph=0 max_abs_error=0.00032281131 mean_abs_error=3.7175909e-05
+paged_gqa_decode splits=8 graph=0 max_abs_error=0.00032281131 mean_abs_error=3.7563677e-05
+paged_gqa_decode splits=32 graph=0 max_abs_error=0.00032281131 mean_abs_error=3.7563677e-05
+paged_mha_decode splits=8 graph=0 max_abs_error=0.00023436919 mean_abs_error=3.2630577e-05
+paged_mqa_decode splits=8 graph=0 max_abs_error=0.00030290149 mean_abs_error=4.0050937e-05
+paged_gqa_decode splits=8 graph=1 max_abs_error=0.00028307736 mean_abs_error=3.5632409e-05
+All standalone FlashAttention numerical checks passed.
